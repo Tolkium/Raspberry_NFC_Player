@@ -1,0 +1,9 @@
+kivy==2.2.1
+kivy-garden.zbarcam==0.1.0
+RPi.GPIO==0.7.1
+PyGObject==3.42.2
+python-gst-1.0==0.1.0
+mfrc522==0.0.7
+python-json-logger==2.0.7
+pillow==10.2.0
+python-dotenv==1.0.1 

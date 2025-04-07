@@ -1,0 +1,17 @@
+[Unit]
+Description=Raspberry Pi RFID Media Player
+After=graphical.target
+Wants=graphical.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/raspberry-nfc-player
+ExecStart=/usr/bin/python3 /home/pi/raspberry-nfc-player/media_player.py
+Restart=always
+RestartSec=10
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+
+[Install]
+WantedBy=graphical.target 
